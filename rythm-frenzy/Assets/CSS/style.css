@@ -1,15 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .tittle {
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
+    font-size: 4rem;
+}
+
+.site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #start {
-    width: 150px;
-    height: 45px;
+    width: 200px;
+    height: 60px;
     border-radius: 5px;
     color: black;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
+    position: absolute;
+    top: 50%;
 }
 
 #game {
@@ -18,7 +28,7 @@
 }
 
 #canvas {
-    margin : 0 auto;
+    margin: 0 auto;
 }
 
 #Letter {
@@ -32,49 +42,48 @@ button {
 .btn {
     border: 3px solid #fff;
     border-radius: 100%;
-    height: 50px;
-    width: 50px;
+    height: 5rem;
+    width: 5rem;
     text-align: center;
     color: white;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Bebas Neue", cursive;
     font-size: 1.3em;
+    max-width: 100%;
+    margin: 9px;
 }
 
-
 #q {
-    background:#FF0000;
-    box-shadow: 0 -2px 0 3px #8b1111 inset, 0 5px 5px rgba(3, 25, 41, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
-
+    background: #ff0000;
+    box-shadow: 0 -2px 0 3px #8b1111 inset, 0 5px 5px rgba(3, 25, 41, 0.17),
+        0 15px rgba(255, 255, 255, 0.25) inset;
 }
 
 #s {
-    background:#FAFF00;
-    box-shadow: 0 -2px 0 3px #a4a717 inset, 0 5px 5px rgba(3, 25, 41, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset
+    background: #faff00;
+    box-shadow: 0 -2px 0 3px #a4a717 inset, 0 5px 5px rgba(3, 25, 41, 0.17),
+        0 15px rgba(255, 255, 255, 0.25) inset;
 }
 
 #d {
-    background:#24FF00;
-    box-shadow: 0 -2px 0 3px #179904 inset, 0 5px 5px rgba(3, 25, 41, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+    background: #24ff00;
+    box-shadow: 0 -2px 0 3px #179904 inset, 0 5px 5px rgba(3, 25, 41, 0.17),
+        0 15px rgba(255, 255, 255, 0.25) inset;
 }
 
 #k {
-    background:#00F0FF;
-    box-shadow: 0 -2px 0 3px #027f88 inset, 0 5px 5px rgba(3, 25, 41, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+    background: #00f0ff;
+    box-shadow: 0 -2px 0 3px #027f88 inset, 0 5px 5px rgba(3, 25, 41, 0.17),
+        0 15px rgba(255, 255, 255, 0.25) inset;
 }
 
 #l {
-    background:#001AFF;
-    box-shadow: 0 -2px 0 3px #021091 inset, 0 5px 5px rgba(3, 25, 41, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset;
+    background: #001aff;
+    box-shadow: 0 -2px 0 3px #021091 inset, 0 5px 5px rgba(3, 25, 41, 0.17),
+        0 15px rgba(255, 255, 255, 0.25) inset;
 }
 
 #m {
-    background:#BD00FF;
-    box-shadow: 0 -2px 0 3px #630386 inset, 0 5px 5px rgba(3, 25, 41, 0.17), 0 15px rgba(255, 255, 255, 0.25) inset
-}
-
-
-@media (max-width : 650px) {
-    #canva {
-        width: 100%;
-    }
+    background: #bd00ff;
+    box-shadow: 0 -2px 0 3px #630386 inset, 0 5px 5px rgba(3, 25, 41, 0.17),
+        0 15px rgba(255, 255, 255, 0.25) inset;
 }

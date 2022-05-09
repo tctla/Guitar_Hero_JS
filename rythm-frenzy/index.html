@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Assets/CSS/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <section class="site">
-      <h1 class="tittle">Guitar Hero</h1>
-      <button id="start">start</button>
-      <audio id="audio" src="./Assets/MP3/triangle.mp3"></audio>
-      <div id="game">
-        <canvas
-          id="canvas"
-          width="600"
-          height="650"
-          style="
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./Assets/CSS/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="site">
+    <h1 class="tittle">Guitar Hero</h1>
+    <button id="start">start</button>
+    <audio id="audio" src="./Assets/MP3/triangle.mp3"></audio>
+    <div id="game">
+      <canvas id="canvas" width="600" height="650" style="
             border: 1px solid black;
             background-image: (url(./Assets/IMG/couverture.jpg));
-          "
-        >
-        </canvas>
-      </div>
-      <div id="Letter">
-        <button class="btn" id="q">q</button>
-        <button class="btn" id="s">s</button>
-        <button class="btn" id="d">d</button>
-        <button class="btn" id="k">k</button>
-        <button class="btn" id="l">l</button>
-        <button class="btn" id="m">m</button>
-      </div>
+            width: 100%;
+          ">
+      </canvas>
+    </div>
+    <div id="Letter">
+      <button class="btn" id="q">q</button>
+      <button class="btn" id="s">s</button>
+      <button class="btn" id="d">d</button>
+      <button class="btn" id="k">k</button>
+      <button class="btn" id="l">l</button>
+      <button class="btn" id="m">m</button>
+    </div>
+    <div id="score">
       <div id="compteur"></div>
 
       <div id="erreur"></div>
-    </section>
-    <script src="./Assets/JS/index.js"></script>
-  </body>
+    </div>
+  </section>
+  <script src="./Assets/JS/index.js"></script>
+</body>
+
 </html>
