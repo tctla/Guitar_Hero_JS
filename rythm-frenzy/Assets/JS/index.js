@@ -11,9 +11,11 @@ let test = creatceCercleFunc();
 let key = document.getElementById("Letter");
 let compteur = document.getElementById("compteur");
 let erreur = document.getElementById("erreur");
+
 let point = 0;
 let lose = 5;
-let fail = 3;
+// let fails = document.getElementById("fails")
+// let fail = 3;
 let button = document.getElementById("start");
 let audio = document.getElementById("audio");
 arrayEntityCercle.push(test);
@@ -47,7 +49,7 @@ function gameLoop(timeStamp) {
   update(arrayEntityCercle);
 
   slow += 1;
-  if (slow == 69) {
+  if (slow == 124) {
     let createCercle = creatceCercleFunc();
     arrayEntityCercle.push(createCercle);
     slow = 0;
@@ -67,8 +69,6 @@ function gameLoop(timeStamp) {
   }
 }
 
-
-
 document.addEventListener("keyup", (e) => {
   switch (e.key.toLowerCase()) {
     case "q":
@@ -80,9 +80,9 @@ document.addEventListener("keyup", (e) => {
         point += 1;
         arrayEntityCercle.shift();
         compteur.textContent = point;
-      } else {
-        fail -= 1
-        erreur.textContent = fail;
+      // } else {
+      //   fail -= 1
+      //   fails.textContent = fails;
       }
       break;
     case "s":
@@ -94,9 +94,9 @@ document.addEventListener("keyup", (e) => {
         point += 1;
         arrayEntityCercle.shift();
         compteur.textContent = point;
-      } else {
-        fail -= 1
-        erreur.textContent = fail;
+      // } else {
+      //   fail -= 1
+      //   fails.textContent = fails;
       }
       break;
     case "d":
@@ -108,9 +108,9 @@ document.addEventListener("keyup", (e) => {
         point += 1;
         arrayEntityCercle.shift();
         compteur.textContent = point;
-      } else {
-        fail -= 1;
-        erreur.textContent = fail;
+      // } else {
+      //   fail -= 1;
+      //   fails.textContent = fails;
       }
       break;
     case "k":
@@ -122,9 +122,9 @@ document.addEventListener("keyup", (e) => {
         point += 1;
         arrayEntityCercle.shift();
         compteur.textContent = point;
-      } else {
-        fail -= 1
-        erreur.textContent = fail;
+      // } else {
+      //   fail -= 1
+      //   fails.textContent = fails;
       }
       break;
     case "l":
@@ -136,9 +136,9 @@ document.addEventListener("keyup", (e) => {
         point += 1;
         arrayEntityCercle.shift();
         compteur.textContent = point;
-      } else {
-        fail -= 1;
-        erreur.textContent = fail;
+      // } else {
+      //   fail -= 1;
+      //   fails.textContent = fails;
       }
       break;
     case "m":
@@ -150,9 +150,9 @@ document.addEventListener("keyup", (e) => {
         point += 1;
         arrayEntityCercle.shift();
         compteur.textContent = point;
-      } else {
-        fail -= 1;
-        erreur.textContent = fail;
+      // } else {
+      //   fail -= 1;
+      //   fails.textContent = fails;
       }
       default:
         return 0;
